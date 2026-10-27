@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="机器人仿真与强化学习应用图标">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2350"/>
+      <stop offset="1" stop-color="#2746B8"/>
+    </linearGradient>
+    <linearGradient id="arm1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9FCCFF"/>
+      <stop offset="1" stop-color="#3E7BFF"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.4" r="0.62">
+      <stop offset="0" stop-color="#5B8CFF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5B8CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 圆角方底（与分子动力学版共用同一外框语言） -->
+  <rect x="16" y="16" width="480" height="480" rx="112" ry="112" fill="url(#bg1)"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" ry="112" fill="url(#glow1)"/>
+
+  <!-- 机器人头部 -->
+  <g>
+    <!-- 耳朵 -->
+    <rect x="158" y="188" width="16" height="56" rx="7" fill="url(#arm1)"/>
+    <rect x="338" y="188" width="16" height="56" rx="7" fill="url(#arm1)"/>
+    <!-- 头主体 -->
+    <rect x="176" y="140" width="160" height="150" rx="36" fill="url(#arm1)" stroke="#0E1B4D" stroke-width="6"/>
+    <!-- 屏幕脸 -->
+    <rect x="196" y="160" width="120" height="92" rx="22" fill="#0E1B4D"/>
+    <!-- 眼睛 -->
+    <circle cx="230" cy="196" r="13" fill="#7CE0FF"/>
+    <circle cx="282" cy="196" r="13" fill="#7CE0FF"/>
+    <!-- 嘴 -->
+    <rect x="226" y="224" width="60" height="13" rx="6" fill="#7CE0FF"/>
+    <!-- 天线 -->
+    <line x1="256" y1="140" x2="256" y2="112" stroke="#7CE0FF" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="256" cy="106" r="11" fill="#7CE0FF"/>
+  </g>
+
+  <!-- 地面阴影 -->
+  <ellipse cx="256" cy="332" rx="74" ry="13" fill="#000000" opacity="0.18"/>
+
+  <!-- 强化学习 / 多智能体节点图（右下角徽标） -->
+  <g stroke="#2746B8" stroke-width="6" stroke-linecap="round">
+    <line x1="372" y1="300" x2="412" y2="332"/>
+    <line x1="412" y1="332" x2="378" y2="368"/>
+    <line x1="378" y1="368" x2="372" y2="300"/>
+  </g>
+  <circle cx="372" cy="300" r="15" fill="#7CE0FF" stroke="#2746B8" stroke-width="4"/>
+  <circle cx="412" cy="332" r="15" fill="#7CE0FF" stroke="#2746B8" stroke-width="4"/>
+  <circle cx="378" cy="368" r="15" fill="#7CE0FF" stroke="#2746B8" stroke-width="4"/>
+</svg>
